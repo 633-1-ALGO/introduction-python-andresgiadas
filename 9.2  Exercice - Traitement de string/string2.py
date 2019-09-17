@@ -20,4 +20,4 @@ for lettre in texte:
 
 print("nb exemple : ", cpt)
 liste[1] = "représente"
-print(liste)
+print(*liste)

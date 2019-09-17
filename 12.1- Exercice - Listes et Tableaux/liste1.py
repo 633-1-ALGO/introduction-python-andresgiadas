@@ -6,3 +6,20 @@
 # Indication :   L'alignement rectiligne n'est pas une contrainte, tant que la table est visible ligne par ligne c'est ok.
 #               Si vous êtes perfectionnistes faites vous plaisir.
 liste = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+listToPrint = []
+listToPrint.append("  ")
+
+for element in liste:
+    listToPrint.append(element)
+print(*listToPrint)
+listToPrint = []
+
+for element in liste:
+    first = element
+    listToPrint.append(str(first)+" ")
+    for e in liste:
+        listToPrint.append(first*e)
+    print(*listToPrint)
+    listToPrint = []
+
